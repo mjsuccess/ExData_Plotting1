@@ -17,7 +17,7 @@ a2 = subset(a,a$Date>begin & a$Date<end)
 a2[,2]=weekdays(a2$Date)
 colnames(a2)[2] <- "Weekday"
 
-png(filename = "ExData_Plotting1/plot3.png")
+png(filename = "ExData_Plotting1/plot3.png",height=480, width=480)
 plot(a2$Sub_metering_1,xaxt="n",xlab="",ylab = "Energy sub metering",type = "n")
 lines(a2$Sub_metering_1)
 lines(a2$Sub_metering_2,col="red")

@@ -16,6 +16,6 @@ end = strptime("03/02/2007 00:00:00","%d/%m/%Y %H:%M:%S")
 
 a2 = subset(a,a$Date>begin & a$Date<end)
 
-png(filename = "ExData_Plotting1/plot1.png")
+png(filename = "ExData_Plotting1/plot1.png",height=480, width=480)
 hist(a2$Global_active_power,col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 dev.off()

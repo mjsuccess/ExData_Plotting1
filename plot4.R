@@ -17,7 +17,7 @@ a2 = subset(a,a$Date>begin & a$Date<end)
 a2[,2]=weekdays(a2$Date)
 colnames(a2)[2] <- "Weekday"
 
-png(filename = "ExData_Plotting1/plot4.png")
+png(filename = "ExData_Plotting1/plot4.png",height=480, width=480)
 par(mfrow=c(2,2))
 
 plot(a2$Global_active_power,xaxt="n",xlab="",ylab = "Global Active Power (kilowatts)",type = "n")
